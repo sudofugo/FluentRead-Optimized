@@ -15,9 +15,9 @@
          @mouseenter="handleMouseEnterTooltip"
          @mouseleave="handleMouseLeaveTooltip">
       <div class="tooltip-header">
-        <span>翻译结果<small>（via 流畅阅读）</small></span>
+        <span v-html="i18n.getMessage('selection_translator_result_title')"></span>
         <div class="tooltip-actions">
-          <button class="action-btn" @click="copyTranslation" title="复制译文">
+          <button class="action-btn" @click="copyTranslation" :title="i18n.getMessage('selection_translator_copy_translation')">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
               <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -33,7 +33,7 @@
           <!-- 原文显示（双语模式才显示） -->
           <div v-if="config.selectionTranslatorMode === 'bilingual'" class="original-text no-select">
             <pre>{{ selectedText }}</pre>
-            <button class="text-audio-btn" @click="(e) => toggleAudio(selectedText, e)" title="播放/停止原文">
+            <button class="text-audio-btn" @click="(e) => toggleAudio(selectedText, e)" :title="i18n.getMessage('selection_translator_play_stop_original')">
               <svg v-if="isPlaying && currentPlayingText === selectedText" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="6" y="4" width="4" height="16"></rect>
                 <rect x="14" y="4" width="4" height="16"></rect>
@@ -47,7 +47,7 @@
           <!-- 译文显示（双语模式和只显示译文模式都显示） -->
           <div v-if="config.selectionTranslatorMode === 'bilingual' || config.selectionTranslatorMode === 'translation-only'" class="translation-result no-select">
             <pre>{{ translationResult }}</pre>
-            <button class="text-audio-btn" @click="(e) => toggleAudio(translationResult, e)" title="播放/停止译文">
+            <button class="text-audio-btn" @click="(e) => toggleAudio(translationResult, e)" :title="i18n.getMessage('selection_translator_play_stop_translation')">
               <svg v-if="isPlaying && currentPlayingText === translationResult" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="6" y="4" width="4" height="16"></rect>
                 <rect x="14" y="4" width="4" height="16"></rect>
@@ -67,7 +67,7 @@
                 <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
               </svg>
             </div>
-            <span>正在播放: {{ currentPlayingText === selectedText ? '原文' : '译文' }}</span>
+            <span v-html="i18n.getMessage('selection_translator_now_playing', { text: currentPlayingText === selectedText ? i18n.getMessage('selection_translator_original_text') : i18n.getMessage('selection_translator_translated_text') })"></span>
             <button class="stop-audio-btn" @click="(e) => stopAudio(e)">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="6" y="4" width="4" height="16"></rect>
@@ -86,7 +86,7 @@
           <polyline points="20 6 9 17 4 12"></polyline>
         </svg>
       </div>
-      <span>复制译文成功!</span>
+      <span>{{ i18n.getMessage('selection_translator_copy_success') }}</span>
     </div>
   </teleport>
 </template>
@@ -95,6 +95,7 @@
 import { ref, computed, onMounted, onBeforeUnmount, watch } from 'vue';
 import { translateText } from '@/entrypoints/utils/translateApi';
 import { config } from '@/entrypoints/utils/config';
+import { i18n } from '../entrypoints/utils/i18n';
 
 // 状态变量
 const selectedText = ref('');

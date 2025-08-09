@@ -1,0 +1,850 @@
+{
+  "extName": {
+    "message": "Fluent Read",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "A revolutionary open-source translation browser extension that provides a native reading experience for everyone.",
+    "description": "Extension description"
+  },
+  "header_title": {
+    "message": "Fluent Read",
+    "description": "Header title"
+  },
+  "footer_github": {
+    "message": "GitHub Open Source",
+    "description": "GitHub link in footer"
+  },
+  "footer_clear_cache": {
+    "message": "Clear translation cache",
+    "description": "Clear cache button in footer"
+  },
+  "footer_clearing_cache": {
+    "message": "Clearing...",
+    "description": "Clearing cache button text in footer"
+  },
+  "footer_clear_cache_success": {
+    "message": "Cleared successfully",
+    "description": "Clear cache success button text in footer"
+  },
+  "footer_clear_cache_fail": {
+    "message": "Clear failed",
+    "description": "Clear cache fail button text in footer"
+  },
+  "footer_translation_count": {
+    "message": "You have translated $COUNT$ times",
+    "description": "Translation count in footer",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "123"
+      }
+    }
+  },
+  "footer_sponsor_author": {
+    "message": "Sponsor author",
+    "description": "Sponsor author button in footer"
+  },
+  "footer_sponsor_text": {
+    "message": "If you find this plugin helpful,<br>you can buy the author a coffee via WeChat👇🏻",
+    "description": "Sponsor text in footer"
+  },
+  "footer_sponsor_qrcode": {
+    "message": "Donation code",
+    "description": "Sponsor QR code alt text in footer"
+  },
+  "footer_sponsor_thanks": {
+    "message": "Thanks for your support! ❤️",
+    "description": "Sponsor thanks text in footer"
+  },
+  "main_plugin_status": {
+    "message": "Plugin status",
+    "description": "Plugin status"
+  },
+  "main_plugin_status_on": {
+    "message": "On",
+    "description": "On"
+  },
+  "main_plugin_status_off": {
+    "message": "Off",
+    "description": "Off"
+  },
+  "main_plugin_disabled": {
+    "message": "Plugin is disabled",
+    "description": "Plugin is disabled"
+  },
+  "main_cache_translation_results": {
+    "message": "Cache translation results",
+    "description": "Cache translation results"
+  },
+  "main_cache_tooltip": {
+    "message": "Enabling cache can improve translation speed and reduce duplicate requests, but may result in outdated translations",
+    "description": "Cache tooltip"
+  },
+  "main_new_feature": {
+    "message": "New",
+    "description": "New feature badge"
+  },
+  "main_full_page_translation_floating_ball": {
+    "message": "Full-page translation floating ball",
+    "description": "Full-page translation floating ball"
+  },
+  "main_floating_ball_tooltip": {
+    "message": "(Beta) Controls whether to show the instant translation floating ball at the edge of the screen for translating the entire webpage",
+    "description": "Floating ball tooltip"
+  },
+  "main_full_page_translation_hotkey": {
+    "message": "Full-page translation hotkey",
+    "description": "Full-page translation hotkey"
+  },
+  "main_hotkey_tooltip": {
+    "message": "(Beta) Set a hotkey to quickly toggle full-page translation status without clicking the floating ball",
+    "description": "Hotkey tooltip"
+  },
+  "main_select_hotkey": {
+    "message": "Select hotkey",
+    "description": "Select hotkey"
+  },
+  "main_selection_translation": {
+    "message": "Translate on selection",
+    "description": "Translate on selection"
+  },
+  "main_selection_translation_tooltip": {
+    "message": "After selecting text, a red dot will appear. Hover over the red dot to see the translation. You can choose to disable, show bilingual, or show translation only",
+    "description": "Selection translation tooltip"
+  },
+  "main_select_mode": {
+    "message": "Select mode",
+    "description": "Select mode"
+  },
+  "main_mode_disabled": {
+    "message": "Disable",
+    "description": "Disable"
+  },
+  "main_mode_bilingual": {
+    "message": "Bilingual display",
+    "description": "Bilingual display"
+  },
+  "main_mode_translation_only": {
+    "message": "Translation only",
+    "description": "Translation only"
+  },
+  "main_translation_mode": {
+    "message": "Translation mode",
+    "description": "Translation mode"
+  },
+  "main_select_translation_mode": {
+    "message": "Please select translation mode",
+    "description": "Please select translation mode"
+  },
+  "main_translation_style": {
+    "message": "Translation style",
+    "description": "Translation style"
+  },
+  "main_translation_style_tooltip": {
+    "message": "Select the display style of the translation in bilingual mode, offering various beautiful effects",
+    "description": "Translation style tooltip"
+  },
+  "main_select_translation_style": {
+    "message": "Please select translation display style",
+    "description": "Please select translation display style"
+  },
+  "main_translation_service": {
+    "message": "Translation service",
+    "description": "Translation service"
+  },
+  "main_translation_service_tooltip": {
+    "message": "Machine translation: fast and stable, suitable for daily use; AI translation: more natural and fluent, requires token configuration",
+    "description": "Translation service tooltip"
+  },
+  "main_select_translation_service": {
+    "message": "Please select translation service",
+    "description": "Please select translation service"
+  },
+  "main_target_language": {
+    "message": "Target language",
+    "description": "Target language"
+  },
+  "main_select_target_language": {
+    "message": "Please select target language",
+    "description": "Please select target language"
+  },
+  "main_hotkey": {
+    "message": "Hotkey",
+    "description": "Hotkey"
+  },
+  "main_select_hotkey": {
+    "message": "Please select hotkey",
+    "description": "Please select hotkey"
+  },
+  "main_access_token": {
+    "message": "Access token",
+    "description": "Access token"
+  },
+  "main_access_token_tooltip": {
+    "message": "The API access token is only saved locally and used to access the translation service. Please refer to the official documentation of the corresponding service for how to obtain it; when the translation service is ollama, the token can be any value",
+    "description": "Access token tooltip"
+  },
+  "main_enter_access_token": {
+    "message": "Please enter API access token",
+    "description": "Please enter API access token"
+  },
+  "main_service_address": {
+    "message": "Service address",
+    "description": "Service address"
+  },
+  "main_service_address_tooltip": {
+    "message": "DeepLX API service address, defaults to the local address. If you use a remote DeepLX service, please change it to the corresponding service address",
+    "description": "Service address tooltip"
+  },
+  "main_enter_service_address": {
+    "message": "http://localhost:1188/translate",
+    "description": "Enter service address"
+  },
+  "main_api_key": {
+    "message": "API Key",
+    "description": "API Key"
+  },
+  "main_api_key_tooltip": {
+    "message": "Baidu ERNIE Bot API key pair, used to access the translation service",
+    "description": "API Key tooltip"
+  },
+  "main_enter_access_key": {
+    "message": "Please enter Access Key",
+    "description": "Please enter Access Key"
+  },
+  "main_secret_key": {
+    "message": "Secret Key",
+    "description": "Secret Key"
+  },
+  "main_enter_secret_key": {
+    "message": "Please enter Secret Key",
+    "description": "Please enter Secret Key"
+  },
+  "main_robot_id": {
+    "message": "Robot ID",
+    "description": "Robot ID"
+  },
+  "main_robot_id_tooltip": {
+    "message": "Coze Robot ID, can be found in the Coze developer documentation",
+    "description": "Robot ID tooltip"
+  },
+  "main_enter_robot_id": {
+    "message": "Please enter Coze Robot ID",
+    "description": "Please enter Coze Robot ID"
+  },
+  "main_custom_interface": {
+    "message": "Custom interface",
+    "description": "Custom interface"
+  },
+  "main_custom_interface_tooltip": {
+    "message": "Currently only supports OpenAI format request interfaces, such as http://localhost:3000/v1/chat/completions, where localhost:11434 can be replaced with any value. For ollama configuration, please refer to: https://fluent.thinkstu.com/guide/faq.html",
+    "description": "Custom interface tooltip"
+  },
+  "main_enter_custom_interface": {
+    "message": "Please enter custom interface address",
+    "description": "Please enter custom interface address"
+  },
+  "main_new_api_interface": {
+    "message": "NewAPI interface",
+    "description": "NewAPI interface"
+  },
+  "main_new_api_interface_tooltip": {
+    "message": "Fill in the access address of New API, such as: http://localhost:3000",
+    "description": "NewAPI interface tooltip"
+  },
+  "main_enter_new_api_interface": {
+    "message": "Please enter your New API interface address",
+    "description": "Please enter your New API interface address"
+  },
+  "main_model": {
+    "message": "Model",
+    "description": "Model"
+  },
+  "main_select_model": {
+    "message": "Please select model",
+    "description": "Please select model"
+  },
+  "main_access_point": {
+    "message": "Access point",
+    "description": "Access point"
+  },
+  "main_custom_model": {
+    "message": "Custom model",
+    "description": "Custom model"
+  },
+  "main_custom_model_tooltip_doubao": {
+    "message": "Doubao's model is an access point, see the official documentation for how to get it: https://console.volcengine.com/ark/region:ark+cn-beijing/endpoint",
+    "description": "Custom model tooltip for Doubao"
+  },
+  "main_custom_model_tooltip_default": {
+    "message": "Note: The custom model name must be consistent with the model name provided by the service provider, otherwise it cannot be used!",
+    "description": "Default custom model tooltip"
+  },
+  "main_enter_custom_model": {
+    "message": "e.g., gemma:7b",
+    "description": "Enter custom model"
+  },
+  "main_advanced_options": {
+    "message": "Advanced options",
+    "description": "Advanced options"
+  },
+  "main_proxy_address": {
+    "message": "Proxy address",
+    "description": "Proxy address"
+  },
+  "main_proxy_address_tooltip": {
+    "message": "Using a proxy can solve network access problems. If you are not familiar with proxy settings, please leave it blank!",
+    "description": "Proxy address tooltip"
+  },
+  "main_default_no_proxy": {
+    "message": "No proxy by default",
+    "description": "No proxy by default"
+  },
+  "main_system": {
+    "message": "system",
+    "description": "system"
+  },
+  "main_system_tooltip": {
+    "message": "Dialog sent as system identity, often used to specify the role the AI should play",
+    "description": "system tooltip"
+  },
+  "main_system_message": {
+    "message": "system message",
+    "description": "system message"
+  },
+  "main_user": {
+    "message": "user",
+    "description": "user"
+  },
+  "main_user_tooltip": {
+    "message": "Dialog sent as user identity, where {{to}} represents the target language and {{origin}} represents the text to be translated, both are indispensable.",
+    "description": "user tooltip"
+  },
+  "main_user_message_template": {
+    "message": "user message template",
+    "description": "user message template"
+  },
+  "main_restore_default_template": {
+    "message": "Restore default template",
+    "description": "Restore default template"
+  },
+  "main_restore_default_template_confirm": {
+    "message": "Are you sure you want to restore the default system and user templates? This action will overwrite the current custom templates.",
+    "description": "Restore default template confirmation"
+  },
+  "main_restore_default_template_confirm_title": {
+    "message": "Restore default template",
+    "description": "Restore default template confirmation title"
+  },
+  "main_confirm": {
+    "message": "Confirm",
+    "description": "Confirm"
+  },
+  "main_cancel": {
+    "message": "Cancel",
+    "description": "Cancel"
+  },
+  "main_restore_default_template_success": {
+    "message": "Successfully restored default translation templates",
+    "description": "Restore default template success message"
+  },
+  "main_translation_concurrency": {
+    "message": "Translation concurrency",
+    "description": "Translation concurrency"
+  },
+  "main_translation_concurrency_tooltip": {
+    "message": "Set the maximum number of concurrent translation requests. A higher value may increase translation speed, but may also lead to API limits or high network usage. Recommended range: 1-20.",
+    "description": "Translation concurrency tooltip"
+  },
+  "main_enter_concurrency": {
+    "message": "Please enter concurrency (1-20)",
+    "description": "Please enter concurrency"
+  },
+  "main_disable_animations": {
+    "message": "Disable animations",
+    "description": "Disable animations"
+  },
+  "main_disable_animations_tooltip": {
+    "message": "Disable all animation effects (including loading animations, hover animations, etc.) to save GPU resources and power. Suitable for low-configuration devices or users who want to save resources.",
+    "description": "Disable animations tooltip"
+  },
+  "main_disabled": {
+    "message": "Disabled",
+    "description": "Disabled"
+  },
+  "main_enabled": {
+    "message": "Enabled",
+    "description": "Enabled"
+  },
+  "main_theme_settings": {
+    "message": "Theme settings",
+    "description": "Theme settings"
+  },
+  "main_select_theme_mode": {
+    "message": "Please select theme mode",
+    "description": "Please select theme mode"
+  },
+  "main_settings_updated": {
+    "message": "Settings have been updated, refresh the page to take effect",
+    "description": "Settings have been updated, refresh the page to take effect"
+  },
+  "main_refresh": {
+    "message": "Refresh",
+    "description": "Refresh"
+  },
+  "floating_ball_shortcut_tip": {
+    "message": "Hotkey: Alt+T",
+    "description": "Hotkey hint for the floating ball"
+  },
+  "selection_translator_result_title": {
+    "message": "Translation Result (via Fluent Read)",
+    "description": "Title for the selection translator tooltip"
+  },
+  "selection_translator_copy_translation": {
+    "message": "Copy translation",
+    "description": "Tooltip for the copy button in the selection translator"
+  },
+  "selection_translator_translation_failed": {
+    "message": "Translation failed, please try again",
+    "description": "Error message when translation fails in the selection translator"
+  },
+  "selection_translator_play_stop_original": {
+    "message": "Play/stop original text",
+    "description": "Tooltip for the play/stop button for the original text"
+  },
+  "selection_translator_play_stop_translation": {
+    "message": "Play/stop translation",
+    "description": "Tooltip for the play/stop button for the translated text"
+  },
+  "selection_translator_now_playing": {
+    "message": "Now playing: $TEXT$",
+    "description": "Status message when playing audio",
+    "placeholders": {
+      "text": {
+        "content": "$1",
+        "example": "Original"
+      }
+    }
+  },
+  "selection_translator_original_text": {
+    "message": "Original",
+    "description": "Label for the original text in the now playing status"
+  },
+  "selection_translator_translated_text": {
+    "message": "Translation",
+    "description": "Label for the translated text in the now playing status"
+  },
+  "selection_translator_copy_success": {
+    "message": "Translation copied successfully!",
+    "description": "Toast message when translation is copied successfully"
+  },
+  "translation_status_title": {
+    "message": "Translation Progress",
+    "description": "Title for the translation status card"
+  },
+  "translation_status_active_tasks": {
+    "message": "Active Tasks:",
+    "description": "Label for active tasks in the translation status card"
+  },
+  "translation_status_pending_tasks": {
+    "message": "Pending Tasks:",
+    "description": "Label for pending tasks in the translation status card"
+  },
+  "options_on": {
+    "message": "On",
+    "description": "On"
+  },
+  "options_off": {
+    "message": "Off",
+    "description": "Off"
+  },
+  "options_auto_detect": {
+    "message": "Auto-detect",
+    "description": "Auto-detect"
+  },
+  "options_chinese": {
+    "message": "Chinese",
+    "description": "Chinese"
+  },
+  "options_english": {
+    "message": "English",
+    "description": "English"
+  },
+  "options_japanese": {
+    "message": "Japanese",
+    "description": "Japanese"
+  },
+  "options_korean": {
+    "message": "Korean",
+    "description": "Korean"
+  },
+  "options_french": {
+    "message": "French",
+    "description": "French"
+  },
+  "options_russian": {
+    "message": "Russian",
+    "description": "Russian"
+  },
+  "options_keyboard": {
+    "message": "Keyboard options",
+    "description": "Keyboard options"
+  },
+  "options_ctrl": {
+    "message": "Ctrl",
+    "description": "Ctrl"
+  },
+  "options_alt": {
+    "message": "Alt",
+    "description": "Alt"
+  },
+  "options_shift": {
+    "message": "Shift",
+    "description": "Shift"
+  },
+  "options_tilde": {
+    "message": "~ key",
+    "description": "~ key"
+  },
+  "options_mouse": {
+    "message": "Mouse options",
+    "description": "Mouse options"
+  },
+  "options_double_click": {
+    "message": "Mouse double-click",
+    "description": "Mouse double-click"
+  },
+  "options_long_press": {
+    "message": "Mouse long-press",
+    "description": "Mouse long-press"
+  },
+  "options_middle_click": {
+    "message": "Mouse middle-click",
+    "description": "Mouse middle-click"
+  },
+  "options_touchscreen": {
+    "message": "Touchscreen options",
+    "description": "Touchscreen options"
+  },
+  "options_two_finger": {
+    "message": "Two-finger translate",
+    "description": "Two-finger translate"
+  },
+  "options_three_finger": {
+    "message": "Three-finger translate",
+    "description": "Three-finger translate"
+  },
+  "options_four_finger": {
+    "message": "Four-finger translate",
+    "description": "Four-finger translate"
+  },
+  "options_double_click_screen": {
+    "message": "Double-click translate",
+    "description": "Double-click translate"
+  },
+  "options_triple_click_screen": {
+    "message": "Triple-click translate",
+    "description": "Triple-click translate"
+  },
+  "options_machine_translation": {
+    "message": "Machine translation",
+    "description": "Machine translation"
+  },
+  "options_microsoft_translator": {
+    "message": "Microsoft Translator",
+    "description": "Microsoft Translator"
+  },
+  "options_google_translate": {
+    "message": "Google Translate",
+    "description": "Google Translate"
+  },
+  "options_deepl": {
+    "message": "DeepL",
+    "description": "DeepL"
+  },
+  "options_deeplx": {
+    "message": "DeepLX",
+    "description": "DeepLX"
+  },
+  "options_niu_trans": {
+    "message": "NiuTrans",
+    "description": "NiuTrans"
+  },
+  "options_ai_translation": {
+    "message": "AI translation",
+    "description": "AI translation"
+  },
+  "options_deepseek": {
+    "message": "DeepSeek⭐️",
+    "description": "DeepSeek"
+  },
+  "options_siliconflow": {
+    "message": "SiliconFlow⭐️",
+    "description": "SiliconFlow"
+  },
+  "options_tencent_hunyuan": {
+    "message": "Tencent Hunyuan⭐",
+    "description": "Tencent Hunyuan"
+  },
+  "options_new_api": {
+    "message": "New API",
+    "description": "New API"
+  },
+  "options_grok": {
+    "message": "Grok (X.AI)",
+    "description": "Grok (X.AI)"
+  },
+  "options_openrouter": {
+    "message": "OpenRouter",
+    "description": "OpenRouter"
+  },
+  "options_groq": {
+    "message": "Groq",
+    "description": "Groq"
+  },
+  "options_bytedance_doubao": {
+    "message": "ByteDance Doubao",
+    "description": "ByteDance Doubao"
+  },
+  "options_alibaba_tongyi": {
+    "message": "Alibaba Tongyi",
+    "description": "Alibaba Tongyi"
+  },
+  "options_openai": {
+    "message": "OpenAI",
+    "description": "OpenAI"
+  },
+  "options_kimi": {
+    "message": "Kimi",
+    "description": "Kimi"
+  },
+  "options_zhipu_ai": {
+    "message": "Zhipu AI",
+    "description": "Zhipu AI"
+  },
+  "options_baichuan": {
+    "message": "Baichuan",
+    "description": "Baichuan"
+  },
+  "options_01ai": {
+    "message": "01.AI",
+    "description": "01.AI"
+  },
+  "options_minimax": {
+    "message": "MiniMax",
+    "description": "MiniMax"
+  },
+  "options_step_star": {
+    "message": "Step-star",
+    "description": "Step-star"
+  },
+  "options_infini_core": {
+    "message": "Infini-Core",
+    "description": "Infini-Core"
+  },
+  "options_coze_international": {
+    "message": "Coze International",
+    "description": "Coze International"
+  },
+  "options_coze_china": {
+    "message": "Coze China",
+    "description": "Coze China"
+  },
+  "options_claude": {
+    "message": "Claude",
+    "description": "Claude"
+  },
+  "options_gemini": {
+    "message": "Gemini",
+    "description": "Gemini"
+  },
+  "options_ernie_bot": {
+    "message": "ERNIE Bot",
+    "description": "ERNIE Bot"
+  },
+  "options_custom": {
+    "message": "⭐Custom⭐",
+    "description": "Custom"
+  },
+  "options_translation_only_mode": {
+    "message": "Translation-only mode",
+    "description": "Translation-only mode"
+  },
+  "options_bilingual_mode": {
+    "message": "Bilingual mode",
+    "description": "Bilingual mode"
+  },
+  "options_basic_styles": {
+    "message": "Basic styles",
+    "description": "Basic styles"
+  },
+  "options_simple_mode": {
+    "message": "Simple mode",
+    "description": "Simple mode"
+  },
+  "options_bold": {
+    "message": "Bold",
+    "description": "Bold"
+  },
+  "options_elegant_italic": {
+    "message": "Elegant italic",
+    "description": "Elegant italic"
+  },
+  "options_text_shadow": {
+    "message": "Text shadow",
+    "description": "Text shadow"
+  },
+  "options_underline_series": {
+    "message": "Underline series",
+    "description": "Underline series"
+  },
+  "options_blue_solid_line": {
+    "message": "Blue solid line",
+    "description": "Blue solid line"
+  },
+  "options_elegant_dotted_line": {
+    "message": "Elegant dotted line",
+    "description": "Elegant dotted line"
+  },
+  "options_lively_wavy_line": {
+    "message": "Lively wavy line",
+    "description": "Lively wavy line"
+  },
+  "options_card_series": {
+    "message": "Card series",
+    "description": "Card series"
+  },
+  "options_simple_card": {
+    "message": "Simple card",
+    "description": "Simple card"
+  },
+  "options_gradient_card": {
+    "message": "Gradient card",
+    "description": "Gradient card"
+  },
+  "options_paper_card": {
+    "message": "Paper card",
+    "description": "Paper card"
+  },
+  "options_highlight_series": {
+    "message": "Highlight series",
+    "description": "Highlight series"
+  },
+  "options_study_marker": {
+    "message": "Study marker",
+    "description": "Study marker"
+  },
+  "options_fluorescent_marker": {
+    "message": "Fluorescent marker",
+    "description": "Fluorescent marker"
+  },
+  "options_soft_gradient": {
+    "message": "Soft gradient",
+    "description": "Soft gradient"
+  },
+  "options_background_color_series": {
+    "message": "Background color series",
+    "description": "Background color series"
+  },
+  "options_warm_yellow_background": {
+    "message": "Warm yellow background",
+    "description": "Warm yellow background"
+  },
+  "options_fresh_blue_background": {
+    "message": "Fresh blue background",
+    "description": "Fresh blue background"
+  },
+  "options_plain_gray_background": {
+    "message": "Plain gray background",
+    "description": "Plain gray background"
+  },
+  "options_special_effects": {
+    "message": "Special effects",
+    "description": "Special effects"
+  },
+  "options_elegant_quote": {
+    "message": "Elegant quote",
+    "description": "Elegant quote"
+  },
+  "options_light_border": {
+    "message": "Light border",
+    "description": "Light border"
+  },
+  "options_reading_focus": {
+    "message": "Reading focus",
+    "description": "Reading focus"
+  },
+  "options_simple_bottom_line": {
+    "message": "Simple bottom line",
+    "description": "Simple bottom line"
+  },
+  "options_professional_styles": {
+    "message": "Professional styles",
+    "description": "Professional styles"
+  },
+  "options_code_style": {
+    "message": "Code style",
+    "description": "Code style"
+  },
+  "options_book_style": {
+    "message": "Book style",
+    "description": "Book style"
+  },
+  "options_transparent_effects": {
+    "message": "Transparent effects",
+    "description": "Transparent effects"
+  },
+  "options_semi_transparent_dim": {
+    "message": "Semi-transparent dim",
+    "description": "Semi-transparent dim"
+  },
+  "options_light_transparent_feel": {
+    "message": "Light transparent feel",
+    "description": "Light transparent feel"
+  },
+  "options_alt_t_default": {
+    "message": "Alt+T / Option+T (default)",
+    "description": "Alt+T / Option+T (default)"
+  },
+  "options_alt_a": {
+    "message": "Alt+A / Option+A",
+    "description": "Alt+A / Option+A"
+  },
+  "options_alt_s": {
+    "message": "Alt+S / Option+S",
+    "description": "Alt+S / Option+S"
+  },
+  "options_ctrl_t": {
+    "message": "Ctrl+T / Control+T",
+    "description": "Ctrl+T / Control+T"
+  },
+  "options_ctrl_alt_t": {
+    "message": "Ctrl+Alt+T / Control+Option+T",
+    "description": "Ctrl+Alt+T / Control+Option+T"
+  },
+  "options_ctrl_shift_t": {
+    "message": "Ctrl+Shift+T / Control+Shift+T",
+    "description": "Ctrl+Shift+T / Control+Shift+T"
+  },
+  "options_disable_hotkey": {
+    "message": "Disable hotkey",
+    "description": "Disable hotkey"
+  },
+  "options_follow_os": {
+    "message": "Follow OS",
+    "description": "Follow OS"
+  },
+  "options_light_theme": {
+    "message": "Light theme",
+    "description": "Light theme"
+  },
+  "options_dark_theme": {
+    "message": "Dark theme",
+    "description": "Dark theme"
+  },
+  "custom_model": {
+    "message": "Custom Model",
+    "description": "Custom Model"
+  }
+}

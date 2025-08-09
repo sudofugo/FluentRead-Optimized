@@ -1,6 +1,6 @@
 # 流畅阅读 (FluentRead)
 
-> [English](https://github.com/Bistutu/FluentRead/blob/main/misc/README_EN.md) | 中文
+> [English](https://github.com/Bistutu/FluentRead/blob/main/misc/README_EN.md) | [日本語](https://github.com/Bistutu/FluentRead/blob/main/README.ja.md) | 中文
 
 Open Immersive Translate 开源的沉浸式翻译。
 

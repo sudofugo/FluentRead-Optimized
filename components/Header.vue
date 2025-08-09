@@ -1,8 +1,9 @@
 <template>
-  <h1 class="title">流畅阅读 <span class="version">V{{version}}</span></h1>
+  <h1 class="title">{{ i18n.getMessage('header_title') }} <span class="version">V{{version}}</span></h1>
 </template>
 
 <script lang="ts" setup>
+import { i18n } from '../entrypoints/utils/i18n';
 const version = process.env.VUE_APP_VERSION
 </script>
 

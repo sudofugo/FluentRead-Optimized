@@ -1,0 +1,850 @@
+{
+  "extName": {
+    "message": "流暢な読書",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "誰もが母国語のような読書体験をすることができる、革命的なオープンソースの翻訳ブラウザ拡張機能です。",
+    "description": "Extension description"
+  },
+  "header_title": {
+    "message": "流暢な読書",
+    "description": "Header title"
+  },
+  "footer_github": {
+    "message": "GitHubオープンソース",
+    "description": "GitHub link in footer"
+  },
+  "footer_clear_cache": {
+    "message": "翻訳キャッシュをクリア",
+    "description": "Clear cache button in footer"
+  },
+  "footer_clearing_cache": {
+    "message": "クリア中...",
+    "description": "Clearing cache button text in footer"
+  },
+  "footer_clear_cache_success": {
+    "message": "正常にクリアされました",
+    "description": "Clear cache success button text in footer"
+  },
+  "footer_clear_cache_fail": {
+    "message": "クリアに失敗しました",
+    "description": "Clear cache fail button text in footer"
+  },
+  "footer_translation_count": {
+    "message": "あなたは $COUNT$ 回翻訳しました",
+    "description": "Translation count in footer",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "123"
+      }
+    }
+  },
+  "footer_sponsor_author": {
+    "message": "作者を支援する",
+    "description": "Sponsor author button in footer"
+  },
+  "footer_sponsor_text": {
+    "message": "このプラグインが役に立ったと思ったら、<br>WeChat経由で作者にコーヒーを一杯おごることができます👇🏻",
+    "description": "Sponsor text in footer"
+  },
+  "footer_sponsor_qrcode": {
+    "message": "寄付コード",
+    "description": "Sponsor QR code alt text in footer"
+  },
+  "footer_sponsor_thanks": {
+    "message": "ご支援ありがとうございます！❤️",
+    "description": "Sponsor thanks text in footer"
+  },
+  "main_plugin_status": {
+    "message": "プラグインの状態",
+    "description": "Plugin status"
+  },
+  "main_plugin_status_on": {
+    "message": "オン",
+    "description": "On"
+  },
+  "main_plugin_status_off": {
+    "message": "オフ",
+    "description": "Off"
+  },
+  "main_plugin_disabled": {
+    "message": "プラグインが無効になっています",
+    "description": "Plugin is disabled"
+  },
+  "main_cache_translation_results": {
+    "message": "翻訳結果をキャッシュする",
+    "description": "Cache translation results"
+  },
+  "main_cache_tooltip": {
+    "message": "キャッシュを有効にすると、翻訳速度が向上し、重複したリクエストが減少しますが、翻訳結果が最新でなくなる可能性があります",
+    "description": "Cache tooltip"
+  },
+  "main_new_feature": {
+    "message": "新機能",
+    "description": "New feature badge"
+  },
+  "main_full_page_translation_floating_ball": {
+    "message": "ページ全体の翻訳フローティングボール",
+    "description": "Full-page translation floating ball"
+  },
+  "main_floating_ball_tooltip": {
+    "message": "（ベータ版）ウェブページ全体を翻訳するために、画面の端にインスタント翻訳フローティングボールを表示するかどうかを制御します",
+    "description": "Floating ball tooltip"
+  },
+  "main_full_page_translation_hotkey": {
+    "message": "ページ全体の翻訳ホットキー",
+    "description": "Full-page translation hotkey"
+  },
+  "main_hotkey_tooltip": {
+    "message": "（ベータ版）フローティングボールをクリックせずに、ページ全体の翻訳ステータスをすばやく切り替えるためのホットキーを設定します",
+    "description": "Hotkey tooltip"
+  },
+  "main_select_hotkey": {
+    "message": "ホットキーを選択",
+    "description": "Select hotkey"
+  },
+  "main_selection_translation": {
+    "message": "選択で翻訳",
+    "description": "Translate on selection"
+  },
+  "main_selection_translation_tooltip": {
+    "message": "テキストを選択すると、赤い点が表示されます。赤い点にカーソルを合わせると、翻訳が表示されます。無効にするか、バイリンガル表示にするか、翻訳のみを表示するかを選択できます",
+    "description": "Selection translation tooltip"
+  },
+  "main_select_mode": {
+    "message": "モードを選択",
+    "description": "Select mode"
+  },
+  "main_mode_disabled": {
+    "message": "無効にする",
+    "description": "Disable"
+  },
+  "main_mode_bilingual": {
+    "message": "バイリンガル表示",
+    "description": "Bilingual display"
+  },
+  "main_mode_translation_only": {
+    "message": "翻訳のみ",
+    "description": "Translation only"
+  },
+  "main_translation_mode": {
+    "message": "翻訳モード",
+    "description": "Translation mode"
+  },
+  "main_select_translation_mode": {
+    "message": "翻訳モードを選択してください",
+    "description": "Please select translation mode"
+  },
+  "main_translation_style": {
+    "message": "翻訳スタイル",
+    "description": "Translation style"
+  },
+  "main_translation_style_tooltip": {
+    "message": "バイリンガルモードでの翻訳の表示スタイルを選択し、さまざまな美しい効果を提供します",
+    "description": "Translation style tooltip"
+  },
+  "main_select_translation_style": {
+    "message": "翻訳表示スタイルを選択してください",
+    "description": "Please select translation display style"
+  },
+  "main_translation_service": {
+    "message": "翻訳サービス",
+    "description": "Translation service"
+  },
+  "main_translation_service_tooltip": {
+    "message": "機械翻訳：高速で安定しており、日常の使用に適しています。AI翻訳：より自然で流暢で、トークンの設定が必要です",
+    "description": "Translation service tooltip"
+  },
+  "main_select_translation_service": {
+    "message": "翻訳サービスを選択してください",
+    "description": "Please select translation service"
+  },
+  "main_target_language": {
+    "message": "ターゲット言語",
+    "description": "Target language"
+  },
+  "main_select_target_language": {
+    "message": "ターゲット言語を選択してください",
+    "description": "Please select target language"
+  },
+  "main_hotkey": {
+    "message": "ホットキー",
+    "description": "Hotkey"
+  },
+  "main_select_hotkey": {
+    "message": "ホットキーを選択してください",
+    "description": "Please select hotkey"
+  },
+  "main_access_token": {
+    "message": "アクセストークン",
+    "description": "Access token"
+  },
+  "main_access_token_tooltip": {
+    "message": "APIアクセストークンはローカルにのみ保存され、翻訳サービスへのアクセスに使用されます。取得方法については、対応するサービスの公式ドキュメントを参照してください。翻訳サービスがollamaの場合、トークンは任意の値にすることができます",
+    "description": "Access token tooltip"
+  },
+  "main_enter_access_token": {
+    "message": "APIアクセストークンを入力してください",
+    "description": "Please enter API access token"
+  },
+  "main_service_address": {
+    "message": "サービスアドレス",
+    "description": "Service address"
+  },
+  "main_service_address_tooltip": {
+    "message": "DeepLX APIサービスアドレス。デフォルトはローカルアドレスです。リモートのDeepLXサービスを使用する場合は、対応するサービスアドレスに変更してください",
+    "description": "Service address tooltip"
+  },
+  "main_enter_service_address": {
+    "message": "http://localhost:1188/translate",
+    "description": "Enter service address"
+  },
+  "main_api_key": {
+    "message": "APIキー",
+    "description": "API Key"
+  },
+  "main_api_key_tooltip": {
+    "message": "Baidu ERNIE Bot APIキーペア。翻訳サービスへのアクセスに使用されます",
+    "description": "API Key tooltip"
+  },
+  "main_enter_access_key": {
+    "message": "アクセスキーを入力してください",
+    "description": "Please enter Access Key"
+  },
+  "main_secret_key": {
+    "message": "シークレットキー",
+    "description": "Secret Key"
+  },
+  "main_enter_secret_key": {
+    "message": "シークレットキーを入力してください",
+    "description": "Please enter Secret Key"
+  },
+  "main_robot_id": {
+    "message": "ロボットID",
+    "description": "Robot ID"
+  },
+  "main_robot_id_tooltip": {
+    "message": "CozeロボットID。Coze開発者ドキュメントで確認できます",
+    "description": "Robot ID tooltip"
+  },
+  "main_enter_robot_id": {
+    "message": "CozeロボットIDを入力してください",
+    "description": "Please enter Coze Robot ID"
+  },
+  "main_custom_interface": {
+    "message": "カスタムインターフェース",
+    "description": "Custom interface"
+  },
+  "main_custom_interface_tooltip": {
+    "message": "現在、http://localhost:3000/v1/chat/completionsなどのOpenAI形式のリクエストインターフェースのみをサポートしています。localhost:11434は任意の値に置き換えることができます。ollamaの設定については、https://fluent.thinkstu.com/guide/faq.htmlを参照してください",
+    "description": "Custom interface tooltip"
+  },
+  "main_enter_custom_interface": {
+    "message": "カスタムインターフェースアドレスを入力してください",
+    "description": "Please enter custom interface address"
+  },
+  "main_new_api_interface": {
+    "message": "NewAPIインターフェース",
+    "description": "NewAPI interface"
+  },
+  "main_new_api_interface_tooltip": {
+    "message": "New APIのアクセスアドレスを入力します。例：http://localhost:3000",
+    "description": "NewAPI interface tooltip"
+  },
+  "main_enter_new_api_interface": {
+    "message": "New APIインターフェースアドレスを入力してください",
+    "description": "Please enter your New API interface address"
+  },
+  "main_model": {
+    "message": "モデル",
+    "description": "Model"
+  },
+  "main_select_model": {
+    "message": "モデルを選択してください",
+    "description": "Please select model"
+  },
+  "main_access_point": {
+    "message": "アクセスポイント",
+    "description": "Access point"
+  },
+  "main_custom_model": {
+    "message": "カスタムモデル",
+    "description": "Custom model"
+  },
+  "main_custom_model_tooltip_doubao": {
+    "message": "Doubaoのモデルはアクセスポイントです。取得方法については公式ドキュメントを参照してください：https://console.volcengine.com/ark/region:ark+cn-beijing/endpoint",
+    "description": "Custom model tooltip for Doubao"
+  },
+  "main_custom_model_tooltip_default": {
+    "message": "注意：カスタムモデル名は、サービスプロバイダーが提供するモデル名と一致している必要があります。そうでない場合、使用できません！",
+    "description": "Default custom model tooltip"
+  },
+  "main_enter_custom_model": {
+    "message": "例：gemma:7b",
+    "description": "Enter custom model"
+  },
+  "main_advanced_options": {
+    "message": "詳細オプション",
+    "description": "Advanced options"
+  },
+  "main_proxy_address": {
+    "message": "プロキシサーバーのアドレス",
+    "description": "Proxy address"
+  },
+  "main_proxy_address_tooltip": {
+    "message": "プロキシを使用すると、ネットワークアクセスに関する問題を解決できます。プロキシ設定に慣れていない場合は、空白のままにしてください！",
+    "description": "Proxy address tooltip"
+  },
+  "main_default_no_proxy": {
+    "message": "デフォルトではプロキシなし",
+    "description": "No proxy by default"
+  },
+  "main_system": {
+    "message": "システム",
+    "description": "system"
+  },
+  "main_system_tooltip": {
+    "message": "システムIDで送信されるダイアログ。AIが演じる役割を指定するためによく使用されます",
+    "description": "system tooltip"
+  },
+  "main_system_message": {
+    "message": "システムメッセージ",
+    "description": "system message"
+  },
+  "main_user": {
+    "message": "ユーザー",
+    "description": "user"
+  },
+  "main_user_tooltip": {
+    "message": "ユーザーIDで送信されるダイアログ。{{to}}はターゲット言語を表し、{{origin}}は翻訳するテキストを表します。両方とも不可欠です。",
+    "description": "user tooltip"
+  },
+  "main_user_message_template": {
+    "message": "ユーザーメッセージテンプレート",
+    "description": "user message template"
+  },
+  "main_restore_default_template": {
+    "message": "デフォルトのテンプレートに戻す",
+    "description": "Restore default template"
+  },
+  "main_restore_default_template_confirm": {
+    "message": "デフォルトのシステムテンプレートとユーザーテンプレートに戻してもよろしいですか？この操作は、現在のカスタムテンプレートを上書きします。",
+    "description": "Restore default template confirmation"
+  },
+  "main_restore_default_template_confirm_title": {
+    "message": "デフォルトのテンプレートに戻す",
+    "description": "Restore default template confirmation title"
+  },
+  "main_confirm": {
+    "message": "確認",
+    "description": "Confirm"
+  },
+  "main_cancel": {
+    "message": "キャンセル",
+    "description": "Cancel"
+  },
+  "main_restore_default_template_success": {
+    "message": "デフォルトの翻訳テンプレートが正常に復元されました",
+    "description": "Restore default template success message"
+  },
+  "main_translation_concurrency": {
+    "message": "翻訳の同時実行",
+    "description": "Translation concurrency"
+  },
+  "main_translation_concurrency_tooltip": {
+    "message": "同時に実行する翻訳リクエストの最大数を設定します。値を大きくすると翻訳速度が向上する可能性がありますが、APIの制限やネットワーク使用率の高さにつながる可能性もあります。推奨範囲：1〜20。",
+    "description": "Translation concurrency tooltip"
+  },
+  "main_enter_concurrency": {
+    "message": "同時実行数を入力してください（1〜20）",
+    "description": "Please enter concurrency"
+  },
+  "main_disable_animations": {
+    "message": "アニメーションを無効にする",
+    "description": "Disable animations"
+  },
+  "main_disable_animations_tooltip": {
+    "message": "GPUリソースと電力を節約するために、すべてのアニメーション効果（読み込みアニメーション、ホバーアニメーションなど）を無効にします。低構成のデバイスやリソースを節約したいユーザーに適しています。",
+    "description": "Disable animations tooltip"
+  },
+  "main_disabled": {
+    "message": "無効",
+    "description": "Disabled"
+  },
+  "main_enabled": {
+    "message": "有効",
+    "description": "Enabled"
+  },
+  "main_theme_settings": {
+    "message": "テーマ設定",
+    "description": "Theme settings"
+  },
+  "main_select_theme_mode": {
+    "message": "テーマモードを選択してください",
+    "description": "Please select theme mode"
+  },
+  "main_settings_updated": {
+    "message": "設定が更新されました。有効にするにはページを更新してください",
+    "description": "Settings have been updated, refresh the page to take effect"
+  },
+  "main_refresh": {
+    "message": "更新",
+    "description": "Refresh"
+  },
+  "floating_ball_shortcut_tip": {
+    "message": "ホットキー: Alt+T",
+    "description": "Hotkey hint for the floating ball"
+  },
+  "selection_translator_result_title": {
+    "message": "翻訳結果 (via 流暢な読書)",
+    "description": "Title for the selection translator tooltip"
+  },
+  "selection_translator_copy_translation": {
+    "message": "翻訳をコピー",
+    "description": "Tooltip for the copy button in the selection translator"
+  },
+  "selection_translator_translation_failed": {
+    "message": "翻訳に失敗しました、もう一度お試しください",
+    "description": "Error message when translation fails in the selection translator"
+  },
+  "selection_translator_play_stop_original": {
+    "message": "原文の再生/停止",
+    "description": "Tooltip for the play/stop button for the original text"
+  },
+  "selection_translator_play_stop_translation": {
+    "message": "翻訳の再生/停止",
+    "description": "Tooltip for the play/stop button for the translated text"
+  },
+  "selection_translator_now_playing": {
+    "message": "再生中: $TEXT$",
+    "description": "Status message when playing audio",
+    "placeholders": {
+      "text": {
+        "content": "$1",
+        "example": "原文"
+      }
+    }
+  },
+  "selection_translator_original_text": {
+    "message": "原文",
+    "description": "Label for the original text in the now playing status"
+  },
+  "selection_translator_translated_text": {
+    "message": "翻訳",
+    "description": "Label for the translated text in the now playing status"
+  },
+  "selection_translator_copy_success": {
+    "message": "翻訳が正常にコピーされました！",
+    "description": "Toast message when translation is copied successfully"
+  },
+  "translation_status_title": {
+    "message": "翻訳の進捗",
+    "description": "Title for the translation status card"
+  },
+  "translation_status_active_tasks": {
+    "message": "アクティブなタスク:",
+    "description": "Label for active tasks in the translation status card"
+  },
+  "translation_status_pending_tasks": {
+    "message": "保留中のタスク:",
+    "description": "Label for pending tasks in the translation status card"
+  },
+    "options_on": {
+    "message": "オン",
+    "description": "On"
+  },
+  "options_off": {
+    "message": "オフ",
+    "description": "Off"
+  },
+  "options_auto_detect": {
+    "message": "自動検出",
+    "description": "Auto-detect"
+  },
+  "options_chinese": {
+    "message": "中国語",
+    "description": "Chinese"
+  },
+  "options_english": {
+    "message": "英語",
+    "description": "English"
+  },
+  "options_japanese": {
+    "message": "日本語",
+    "description": "Japanese"
+  },
+  "options_korean": {
+    "message": "韓国語",
+    "description": "Korean"
+  },
+  "options_french": {
+    "message": "フランス語",
+    "description": "French"
+  },
+  "options_russian": {
+    "message": "ロシア語",
+    "description": "Russian"
+  },
+  "options_keyboard": {
+    "message": "キーボードオプション",
+    "description": "Keyboard options"
+  },
+  "options_ctrl": {
+    "message": "Ctrl",
+    "description": "Ctrl"
+  },
+  "options_alt": {
+    "message": "Alt",
+    "description": "Alt"
+  },
+  "options_shift": {
+    "message": "Shift",
+    "description": "Shift"
+  },
+  "options_tilde": {
+    "message": "チルダキー",
+    "description": "~ key"
+  },
+  "options_mouse": {
+    "message": "マウスオプション",
+    "description": "Mouse options"
+  },
+  "options_double_click": {
+    "message": "マウスのダブルクリック",
+    "description": "Mouse double-click"
+  },
+  "options_long_press": {
+    "message": "マウスの長押し",
+    "description": "Mouse long-press"
+  },
+  "options_middle_click": {
+    "message": "マウスの中クリック",
+    "description": "Mouse middle-click"
+  },
+  "options_touchscreen": {
+    "message": "タッチスクリーンオプション",
+    "description": "Touchscreen options"
+  },
+  "options_two_finger": {
+    "message": "2本指で翻訳",
+    "description": "Two-finger translate"
+  },
+  "options_three_finger": {
+    "message": "3本指で翻訳",
+    "description": "Three-finger translate"
+  },
+  "options_four_finger": {
+    "message": "4本指で翻訳",
+    "description": "Four-finger translate"
+  },
+  "options_double_click_screen": {
+    "message": "ダブルクリックで翻訳",
+    "description": "Double-click translate"
+  },
+  "options_triple_click_screen": {
+    "message": "トリプルクリックで翻訳",
+    "description": "Triple-click translate"
+  },
+  "options_machine_translation": {
+    "message": "機械翻訳",
+    "description": "Machine translation"
+  },
+  "options_microsoft_translator": {
+    "message": "Microsoft翻訳",
+    "description": "Microsoft Translator"
+  },
+  "options_google_translate": {
+    "message": "Google翻訳",
+    "description": "Google Translate"
+  },
+  "options_deepl": {
+    "message": "DeepL",
+    "description": "DeepL"
+  },
+  "options_deeplx": {
+    "message": "DeepLX",
+    "description": "DeepLX"
+  },
+  "options_niu_trans": {
+    "message": "NiuTrans",
+    "description": "NiuTrans"
+  },
+  "options_ai_translation": {
+    "message": "AI翻訳",
+    "description": "AI translation"
+  },
+  "options_deepseek": {
+    "message": "DeepSeek⭐️",
+    "description": "DeepSeek"
+  },
+  "options_siliconflow": {
+    "message": "SiliconFlow⭐️",
+    "description": "SiliconFlow"
+  },
+  "options_tencent_hunyuan": {
+    "message": "Tencent Hunyuan⭐",
+    "description": "Tencent Hunyuan"
+  },
+  "options_new_api": {
+    "message": "新しいAPI",
+    "description": "New API"
+  },
+  "options_grok": {
+    "message": "Grok (X.AI)",
+    "description": "Grok (X.AI)"
+  },
+  "options_openrouter": {
+    "message": "OpenRouter",
+    "description": "OpenRouter"
+  },
+  "options_groq": {
+    "message": "Groq",
+    "description": "Groq"
+  },
+  "options_bytedance_doubao": {
+    "message": "ByteDance Doubao",
+    "description": "ByteDance Doubao"
+  },
+  "options_alibaba_tongyi": {
+    "message": "Alibaba Tongyi",
+    "description": "Alibaba Tongyi"
+  },
+  "options_openai": {
+    "message": "OpenAI",
+    "description": "OpenAI"
+  },
+  "options_kimi": {
+    "message": "Kimi",
+    "description": "Kimi"
+  },
+  "options_zhipu_ai": {
+    "message": "Zhipu AI",
+    "description": "Zhipu AI"
+  },
+  "options_baichuan": {
+    "message": "Baichuan",
+    "description": "Baichuan"
+  },
+  "options_01ai": {
+    "message": "01.AI",
+    "description": "01.AI"
+  },
+  "options_minimax": {
+    "message": "MiniMax",
+    "description": "MiniMax"
+  },
+  "options_step_star": {
+    "message": "Step-star",
+    "description": "Step-star"
+  },
+  "options_infini_core": {
+    "message": "Infini-Core",
+    "description": "Infini-Core"
+  },
+  "options_coze_international": {
+    "message": "Coze International",
+    "description": "Coze International"
+  },
+  "options_coze_china": {
+    "message": "Coze China",
+    "description": "Coze China"
+  },
+  "options_claude": {
+    "message": "Claude",
+    "description": "Claude"
+  },
+  "options_gemini": {
+    "message": "Gemini",
+    "description": "Gemini"
+  },
+  "options_ernie_bot": {
+    "message": "ERNIE Bot",
+    "description": "ERNIE Bot"
+  },
+  "options_custom": {
+    "message": "⭐カスタム⭐",
+    "description": "Custom"
+  },
+  "options_translation_only_mode": {
+    "message": "翻訳のみモード",
+    "description": "Translation-only mode"
+  },
+  "options_bilingual_mode": {
+    "message": "バイリンガルモード",
+    "description": "Bilingual mode"
+  },
+  "options_basic_styles": {
+    "message": "基本スタイル",
+    "description": "Basic styles"
+  },
+  "options_simple_mode": {
+    "message": "シンプルモード",
+    "description": "Simple mode"
+  },
+  "options_bold": {
+    "message": "太字",
+    "description": "Bold"
+  },
+  "options_elegant_italic": {
+    "message": "エレガントなイタリック",
+    "description": "Elegant italic"
+  },
+  "options_text_shadow": {
+    "message": "テキストシャドウ",
+    "description": "Text shadow"
+  },
+  "options_underline_series": {
+    "message": "下線シリーズ",
+    "description": "Underline series"
+  },
+  "options_blue_solid_line": {
+    "message": "青い実線",
+    "description": "Blue solid line"
+  },
+  "options_elegant_dotted_line": {
+    "message": "エレガントな点線",
+    "description": "Elegant dotted line"
+  },
+  "options_lively_wavy_line": {
+    "message": "活気のある波線",
+    "description": "Lively wavy line"
+  },
+  "options_card_series": {
+    "message": "カードシリーズ",
+    "description": "Card series"
+  },
+  "options_simple_card": {
+    "message": "シンプルカード",
+    "description": "Simple card"
+  },
+  "options_gradient_card": {
+    "message": "グラデーションカード",
+    "description": "Gradient card"
+  },
+  "options_paper_card": {
+    "message": "ペーパーカード",
+    "description": "Paper card"
+  },
+  "options_highlight_series": {
+    "message": "ハイライトシリーズ",
+    "description": "Highlight series"
+  },
+  "options_study_marker": {
+    "message": "学習マーカー",
+    "description": "Study marker"
+  },
+  "options_fluorescent_marker": {
+    "message": "蛍光マーカー",
+    "description": "Fluorescent marker"
+  },
+  "options_soft_gradient": {
+    "message": "ソフトグラデーション",
+    "description": "Soft gradient"
+  },
+  "options_background_color_series": {
+    "message": "背景色シリーズ",
+    "description": "Background color series"
+  },
+  "options_warm_yellow_background": {
+    "message": "暖かい黄色の背景",
+    "description": "Warm yellow background"
+  },
+  "options_fresh_blue_background": {
+    "message": "新鮮な青い背景",
+    "description": "Fresh blue background"
+  },
+  "options_plain_gray_background": {
+    "message": "無地の灰色の背景",
+    "description": "Plain gray background"
+  },
+  "options_special_effects": {
+    "message": "特殊効果",
+    "description": "Special effects"
+  },
+  "options_elegant_quote": {
+    "message": "エレガントな引用",
+    "description": "Elegant quote"
+  },
+  "options_light_border": {
+    "message": "薄い境界線",
+    "description": "Light border"
+  },
+  "options_reading_focus": {
+    "message": "読書フォーカス",
+    "description": "Reading focus"
+  },
+  "options_simple_bottom_line": {
+    "message": "単純な下線",
+    "description": "Simple bottom line"
+  },
+  "options_professional_styles": {
+    "message": "プロフェッショナルスタイル",
+    "description": "Professional styles"
+  },
+  "options_code_style": {
+    "message": "コードスタイル",
+    "description": "Code style"
+  },
+  "options_book_style": {
+    "message": "ブックスタイル",
+    "description": "Book style"
+  },
+  "options_transparent_effects": {
+    "message": "透明効果",
+    "description": "Transparent effects"
+  },
+  "options_semi_transparent_dim": {
+    "message": "半透明の薄暗がり",
+    "description": "Semi-transparent dim"
+  },
+  "options_light_transparent_feel": {
+    "message": "軽い透明感",
+    "description": "Light transparent feel"
+  },
+  "options_alt_t_default": {
+    "message": "Alt+T / Option+T (デフォルト)",
+    "description": "Alt+T / Option+T (default)"
+  },
+  "options_alt_a": {
+    "message": "Alt+A / Option+A",
+    "description": "Alt+A / Option+A"
+  },
+  "options_alt_s": {
+    "message": "Alt+S / Option+S",
+    "description": "Alt+S / Option+S"
+  },
+  "options_ctrl_t": {
+    "message": "Ctrl+T / Control+T",
+    "description": "Ctrl+T / Control+T"
+  },
+  "options_ctrl_alt_t": {
+    "message": "Ctrl+Alt+T / Control+Option+T",
+    "description": "Ctrl+Alt+T / Control+Option+T"
+  },
+  "options_ctrl_shift_t": {
+    "message": "Ctrl+Shift+T / Control+Shift+T",
+    "description": "Ctrl+Shift+T / Control+Shift+T"
+  },
+  "options_disable_hotkey": {
+    "message": "ホットキーを無効にする",
+    "description": "Disable hotkey"
+  },
+  "options_follow_os": {
+    "message": "OSに従う",
+    "description": "Follow OS"
+  },
+  "options_light_theme": {
+    "message": "ライトテーマ",
+    "description": "Light theme"
+  },
+  "options_dark_theme": {
+    "message": "ダークテーマ",
+    "description": "Dark theme"
+  },
+  "custom_model": {
+    "message": "カスタムモデル",
+    "description": "Custom Model"
+  }
+}

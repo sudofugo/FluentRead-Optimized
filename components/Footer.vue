@@ -1,11 +1,9 @@
 <template>
   <div class="footer-container footer-size">
-    <p class="translation-count">你已经翻译
-      <el-text class="count-number" type="primary">{{ computedCount }}</el-text>
-      次
+    <p class="translation-count" v-html="i18n.getMessage('footer_translation_count', { count: `<el-text class='count-number' type='primary'>${computedCount}</el-text>` })">
     </p>
     <div class="footer-links">
-      <el-link class="action-link left" :class="{ 'failed': buttonText === '清除失败', 'success': buttonText === '清除成功' }" @click="clearCache"
+      <el-link class="action-link left" :class="{ 'failed': buttonText === i18n.getMessage('footer_clear_cache_fail'), 'success': buttonText === i18n.getMessage('footer_clear_cache_success') }" @click="clearCache"
         :disabled="buttonDisabled">
         <el-icon v-if="showLoading">
           <Loading class="el-icon-loading" />
@@ -17,14 +15,14 @@
           <el-icon class="github-icon">
             <Star />
           </el-icon>
-          GitHub开源
+          {{ i18n.getMessage('footer_github') }}
         </el-link>
       </div>
     </div>
     
     <!-- 赞赏码弹窗 -->
     <div
-      title="赞赏作者"
+      :title="i18n.getMessage('footer_sponsor_author')"
       width="300px"
       align-center
       :show-close="true"
@@ -33,12 +31,12 @@
       class="donate-dialog"
     >
       <div class="donate-content">
-        <p class="donate-text">如果你觉得这个插件对您有帮助，<br>可以通过微信👇🏻赞赏作者一杯咖啡
-          <el-icon class="donate-icon"><Coffee /></el-icon> </p>
+        <p class="donate-text" v-html="i18n.getMessage('footer_sponsor_text') + ' <el-icon class=\'donate-icon\'><Coffee /></el-icon>'">
+        </p>
         <div class="qrcode-container">
-          <img src="/misc/approve.jpg" alt="赞赏码" class="qrcode-image" />
+          <img src="/misc/approve.jpg" :alt="i18n.getMessage('footer_sponsor_qrcode')" class="qrcode-image" />
         </div>
-        <p class="donate-thanks">感谢你的支持！❤️</p>
+        <p class="donate-thanks">{{ i18n.getMessage('footer_sponsor_thanks') }}</p>
       </div>
     </div>
   </div>
@@ -50,16 +48,17 @@ import { Star, Loading, Coffee } from "@element-plus/icons-vue";
 import { Config } from "../entrypoints/utils/model";
 import { storage } from '@wxt-dev/storage';
 import browser from 'webextension-polyfill';
+import { i18n } from '../entrypoints/utils/i18n';
 
 // 实际上是 el-link 而不是 el-button
 const buttonDisabled = ref(false);
-const buttonText = ref('清除翻译缓存');
+const buttonText = ref(i18n.getMessage('footer_clear_cache'));
 
 const showLoading = ref(false);
 async function clearCache() {
   try {
     buttonDisabled.value = true;
-    buttonText.value = "正在清除...";
+    buttonText.value = i18n.getMessage('footer_clearing_cache');
     showLoading.value = true;
 
     // 获取当前标签页
@@ -72,23 +71,23 @@ async function clearCache() {
     await browser.tabs.sendMessage(tabs[0].id, { message: 'clearCache' });
 
     // 显示成功状态
-    buttonText.value = "清除成功";
+    buttonText.value = i18n.getMessage('footer_clear_cache_success');
 
     // 恢复按钮状态
     setTimeout(() => {
       buttonDisabled.value = false;
-      buttonText.value = '清除翻译缓存';
+      buttonText.value = i18n.getMessage('footer_clear_cache');
       showLoading.value = false;
     }, 1500);
 
   } catch (error) {
     console.error('清除缓存失败:', error);
-    buttonText.value = "清除失败";
+    buttonText.value = i18n.getMessage('footer_clear_cache_fail');
 
     // 恢复按钮状态
     setTimeout(() => {
       buttonDisabled.value = false;
-      buttonText.value = '清除翻译缓存';
+      buttonText.value = i18n.getMessage('footer_clear_cache');
       showLoading.value = false;
     }, 1500);
   }
