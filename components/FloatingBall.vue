@@ -48,6 +48,7 @@
 import { ref, computed, onMounted, onBeforeUnmount, watch, nextTick } from 'vue';
 import type { PropType, CSSProperties } from 'vue';
 import { config } from '@/entrypoints/utils/config';
+import { i18n } from '../entrypoints/utils/i18n';
 
 const props = defineProps({
   position: {
@@ -103,7 +104,7 @@ const floatingBall = ref<HTMLElement | null>(null);
 const rippleContainer = ref<HTMLElement | null>(null);
 const isAnimating = ref(false);
 const showShortcutTooltip = ref(false);
-const shortcutTip = ref('快捷键: Alt+T');
+const shortcutTip = ref(i18n.getMessage('floating_ball_shortcut_tip'));
 
 const currentDisplayPosition = computed(() => internalPosition.value || props.position);
 
